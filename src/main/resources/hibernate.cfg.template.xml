@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.username">XXXXXX</property>
+        <property name="hibernate.connection.password">XXXXXX</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/swatify</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="show_sql">true</property> 
+
+        <mapping class="edu.swarthmore.cs.cs71.swatify.models.User"/>
+        <mapping class="edu.swarthmore.cs.cs71.swatify.models.Post"/>
+        <mapping class="edu.swarthmore.cs.cs71.swatify.models.Comment"/>
+        <mapping class="edu.swarthmore.cs.cs71.swatify.models.Rating"/>
+        <mapping class="edu.swarthmore.cs.cs71.swatify.models.Discussion"/>
+
+    </session-factory>
+</hibernate-configuration>

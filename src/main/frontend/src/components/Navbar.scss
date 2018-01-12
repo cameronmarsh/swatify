@@ -1,0 +1,13 @@
+.Navbar-link {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+#search {
+  float: left;
+  margin-top: 10px;
+}
